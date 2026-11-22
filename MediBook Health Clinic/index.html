@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Appointments | MediBook Health Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contact-bar">
+            <div class="container contact-row">
+                <div class="contact-links">
+                    <a href="tel:+639171058775">☎ +63 917 105 8775</a>
+                    <a href="mailto:MediBookHealthClinic@gmail.com">✉ MediBookHealthClinic@gmail.com</a>
+                </div>
+
+                <a class="booking-button" href="appointment.html">
+                    Book an Appointment <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container nav-row">
+            <a href="index.html">
+                <img class="logo" src="images/logo1.png" alt="MediBook home">
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a class="active" href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#medical-services">Services</a>
+                <a href="doctors.html">Our Doctors</a>
+                <a href="contact.html">Contact</a>
+                <a href="manage.html">My Appointments</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-scroll" aria-label="MediBook Health Clinic">
+            <div class="hero">
+
+                <!-- Background Video -->
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="images/hero-video.mp4" type="video/mp4">
+                </video>
+
+                <!-- Ivory Overlay -->
+                <div class="hero-overlay"></div>
+
+                <!-- Animated Headline -->
+                <h1 id="hero-title">
+                    MEDICINE<br>
+                    MADE<br>
+                    SIMPLE
+                </h1>
+
+            </div>
+
+        </section>
+
+        <section class="health-intro">
+            <p class="section-label">MediBook Health Clinic</p>
+
+            <h2>
+                Schedule your next
+                <span>clinic visit.</span>
+            </h2>
+
+            <p class="section-description">
+                Request an appointment for a medical consultation, routine
+                checkup, or follow-up visit. Choose the type of visit you need
+                and tell us your preferred date.
+            </p>
+
+            <div class="intro-actions">
+                <a class="booking-button" href="appointment.html">
+                    Book an Appointment <span aria-hidden="true">→</span>
+                </a>
+
+                <a class="intro-call" href="tel:+639171058775">
+                    <span aria-hidden="true">☎</span> Call the Clinic
+                </a>
+            </div>
+        </section>
+
+        <section class="clinic-stats" aria-label="Clinic statistics">
+            <dl class="stats-grid">
+                <div>
+                    <dt>Years of Excellence</dt>
+                    <dd><span class="stat-counter" data-target="15" data-suffix="+" data-decimals="0">0</span></dd>
+                </div>
+                <div>
+                    <dt>Happy Patients</dt>
+                    <dd><span class="stat-counter" data-target="50000" data-suffix="+" data-decimals="0">0</span></dd>
+                </div>
+
+                <div>
+                    <dt>Google Rating</dt>
+                    <dd><span class="stat-counter" data-target="4.9" data-suffix="" data-decimals="1">0.0</span><span class="rating-star" aria-hidden="true">★</span></dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="dentistry-section">
+            <h2>Plan Your Visit</h2>
+
+            <p class="section-description">
+                Pick a doctor, a date, and an open time slot. The clinic will
+                confirm your request, and you can follow its status anytime on
+                the My Appointments page.
+            </p>
+        </section>
+
+        <section class="hours-section" id="clinic-hours" aria-labelledby="hours-heading">
+            <p class="section-label">Operating Hours</p>
+            <h2 id="hours-heading">Clinic Hours</h2>
+            <ul class="hours-list hours-list-center" data-clinic-hours></ul>
+            <p class="hours-note">
+                Each doctor has their own schedule.
+                <a href="doctors.html"><u>See our doctors</u></a>.
+            </p>
+        </section>
+
+        <section class="approach-section" id="medical-services">
+            <p class="section-label">Medical Services</p>
+
+            <h2>What kind of visit do you need?</h2>
+
+            <p class="section-description">
+                Choose the visit type that best matches your reason for booking.
+            </p>
+
+            <div class="approach-grid">
+                <article class="approach-card">
+                    <span class="approach-icon" aria-hidden="true">+</span>
+                    <h3>General Consultation</h3>
+                    <p>
+                        Meet with a doctor to discuss symptoms, ask health
+                        questions, or talk about a new concern.
+                    </p>
+                </article>
+
+                <article class="approach-card">
+                    <span class="approach-icon" aria-hidden="true">✓</span>
+                    <h3>Routine Checkup</h3>
+                    <p>
+                        Schedule a visit to review your general health and
+                        discuss any screenings you may need.
+                    </p>
+                </article>
+
+                <article class="approach-card">
+                    <span class="approach-icon" aria-hidden="true">↻</span>
+                    <h3>Follow-Up Visit</h3>
+                    <p>
+                        Return after a previous consultation to review your
+                        progress, discuss results, or check in with your doctor.
+                    </p>
+                </article>
+
+                <article class="approach-card">
+                    <span class="approach-icon" aria-hidden="true">▤</span>
+                    <h3>Medical Certificate Inquiry</h3>
+                    <p>
+                        Ask the clinic about the requirements for a medical
+                        certificate for school or work.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="appointment-section" aria-labelledby="appointment-heading">
+            <div class="appointment-banner">
+                <h2 id="appointment-heading">
+                    Ready to request a medical appointment?
+                </h2>
+
+                <p class="section-description">
+                    Open the appointment form to select your visit type and
+                    preferred date.
+                </p>
+
+                <div class="intro-actions">
+                    <a class="booking-button" href="appointment.html">
+                        Book an Appointment <span aria-hidden="true">→</span>
+                    </a>
+
+                    <a class="intro-call" href="tel:+639171058775">
+                        <span aria-hidden="true">☎</span> Call the Clinic
+                    </a>
+                </div>
+
+                <p class="appointment-note">
+                    Your appointment is confirmed once the clinic confirms it on the website. Check My Appointments for updates.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html">
+                    <img class="footer-logo" src="images/logo1.png" alt="MediBook">
+                </a>
+
+                <p>
+                    MediBook Health Clinic provides quality, patient-centered care, from routine checkups 
+                    to follow-up visits, with easy online appointment booking.
+                </p>
+            </div>
+            
+            <section class="footer-services">
+                <h2>Our Services</h2>
+
+                <ul class="footer-links">
+                    <li><a href="index.html#medical-services">General Consultation</a></li>
+                    <li><a href="index.html#medical-services">Routine Checkup</a></li>
+                    <li><a href="index.html#medical-services">Follow-Up Visit</a></li>
+                    <li><a href="index.html#medical-services">Medical Certificate Inquiries</a></li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Company</h2>
+
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#medical-services">Services</a></li>
+                    <li><a href="doctors.html">Our Doctors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="manage.html">My Appointments</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-branches">
+                <h2>Location</h2>
+
+                <ul>
+                    <li>
+                        <strong>San Bartolome</strong>
+                        <p>Novaliches</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-booking">
+            <div>
+                <strong>Ready to book your visit?</strong>
+                <p>Call us or book online.</p>
+            </div>
+
+            <div class="footer-actions">
+                <a href="tel:+639171058775">
+                    <span aria-hidden="true">☎</span> +63 917 105 8775
+                </a>
+
+                <a class="booking-button" href="appointment.html">
+                    Book an Appointment <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <small>&copy; 2026 MediBook Health Clinic. All rights reserved.</small>
+
+            <a href="admin/login.html" class="staff-login-link">
+                <span aria-hidden="true">♙</span>
+                Staff Login
+            </a>
+        </div>
+    </div>
+    </footer>
+
+    <a class="floating-button call-button"
+       href="tel:+639171058775"
+       aria-label="Call the clinic">☎</a>
+
+    <a class="floating-button chat-button"
+       href="contact.html"
+       aria-label="Contact the clinic">💬</a>
+    <script src="js/clinic-info.js"></script>
+    <script src="js/scroll-animations.js"></script>
+</body>
+</html>

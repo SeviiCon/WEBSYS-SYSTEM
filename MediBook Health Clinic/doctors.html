@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors | MediBook Health Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/doctors.css">
+</head>
+<body class="doctors-page">
+    <header class="doctors-header">
+        <div class="contact-bar">
+            <div class="container contact-row">
+                <div class="contact-links">
+                    <a href="tel:+639171058775">☎ +63 917 105 8775</a>
+                    <a href="mailto:MediBookHealthClinic@gmail.com">✉ MediBookHealthClinic@gmail.com</a>
+                </div>
+
+                <a class="booking-button" href="appointment.html">
+                    Book an Appointment <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container nav-row">
+             <a href="index.html">
+                <img class="logo" src="images/logo1.png" alt="MediBook home">
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#medical-services">Services</a>
+                <a class="active" href="doctors.html" aria-current="page">Our Doctors</a>
+                <a href="contact.html">Contact</a>
+                <a href="manage.html">My Appointments</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="doctors-hero" aria-labelledby="doctors-heading">
+            <div class="container">
+                <h1 id="doctors-heading">Find a <strong>Doctor</strong></h1>
+                <p>Find the right doctor for your visit at MediBook Health Clinic.</p>
+            </div>
+        </section>
+
+        <section class="container doctors-section" aria-label="Our doctors">
+            <div id="doctor-list" class="doctor-grid">
+                <p class="doctor-empty">Loading doctors...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>MediBook Health Clinic</h2>
+                    <p>
+                        Patient-centered care for routine checkups, general
+                        consultations, and follow-up visits.
+                    </p>
+                </div>
+
+                <section>
+                    <h2>Our Services</h2>
+                    <ul class="footer-links">
+                        <li>General Consultation</li>
+                        <li>Routine Checkup</li>
+                        <li>Follow-Up Visit</li>
+                        <li>Medical Certificate Inquiries</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Company</h2>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#medical-services">Services</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    <li><a href="manage.html">My Appointments</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-branches">
+                    <h2>Location</h2>
+                    <ul>
+                        <li>
+                            <strong>San Bartolome</strong>
+                            <p>Novaliches</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="footer-booking">
+                <div>
+                    <strong>Ready to book your visit?</strong>
+                    <p>Call us or book online.</p>
+                </div>
+
+                <div class="footer-actions">
+                    <a href="tel:+639171058775">
+                        <span aria-hidden="true">☎</span> +63 917 105 8775
+                    </a>
+                    <a class="booking-button" href="appointment.html">
+                        Book an Appointment <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <small>&copy; 2026 MediBook Health Clinic. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <a class="floating-button call-button" href="tel:+639171058775"
+       aria-label="Call the clinic">☎</a>
+
+    <a class="floating-button chat-button" href="contact.html"
+       aria-label="Contact the clinic">💬</a>
+    <script src="js/clinic-info.js"></script>
+</body>
+</html>

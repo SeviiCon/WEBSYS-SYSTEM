@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Appointments | MediBook Health Clinic</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header">
+        <div class="admin-wrap admin-header-row">
+            <div class="admin-brand">
+                <img src="../images/logo1.png" alt="MediBook" class="admin-logo">
+                <strong>Appointment Management</strong>
+            </div>
+            <div class="admin-header-links">
+                <a href="../index.html">View website</a>
+                <button id="logout" type="button" class="admin-btn">Log out</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-wrap">
+        <p id="toast" class="form-status" role="status"></p>
+
+        <section class="admin-stats" aria-label="Summary">
+            <div><span id="c-today">0</span><small>Today</small></div>
+            <div><span id="c-pending">0</span><small>Pending</small></div>
+            <div><span id="c-confirmed">0</span><small>Confirmed</small></div>
+            <div><span id="c-completed">0</span><small>Completed</small></div>
+            <div><span id="c-cancelled">0</span><small>Cancelled</small></div>
+        </section>
+
+        <form id="filters" class="admin-filters">
+            <div class="admin-field">
+                <label for="f-status">Status</label>
+                <select id="f-status" name="status">
+                    <option value="">All</option>
+                    <option value="pending">Pending</option>
+                    <option value="confirmed">Confirmed</option>
+                    <option value="completed">Completed</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+            </div>
+            <div class="admin-field">
+                <label for="f-date">Date</label>
+                <input id="f-date" name="date" type="date">
+            </div>
+            <div class="admin-field grow">
+                <label for="f-search">Search</label>
+                <input id="f-search" name="search" type="search" placeholder="Name, email, or reference">
+            </div>
+            <button type="submit" class="admin-btn primary">Filter</button>
+            <button type="reset" class="admin-btn">Clear</button>
+        </form>
+        
+        <div class="table-scroll">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Reference</th><th>Patient</th><th>Doctor</th><th>Visit</th>
+                        <th>Date &amp; Time</th><th>Status</th><th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="rows"><tr><td colspan="7" class="empty">Loading...</td></tr></tbody>
+            </table>
+        </div>
+    </main>
+
+    <dialog id="edit-dialog" class="admin-dialog">
+        <h2>Update Appointment</h2>
+        <p id="edit-info" class="dialog-info"></p>
+        <div class="admin-field">
+            <label for="edit-date">New date</label>
+            <input id="edit-date" type="date">
+        </div>
+        <div class="admin-field">
+            <label for="edit-time">New time</label>
+            <select id="edit-time"><option value="">Select a time</option></select>
+        </div>
+        <p id="edit-status" class="form-status" role="status"></p>
+        <div class="dialog-actions">
+            <button id="edit-close" type="button" class="admin-btn">Close</button>
+            <button id="edit-save" type="button" class="admin-btn primary">Save</button>
+        </div>
+    </dialog>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments | MediBook Health Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/appointment.css">
+</head>
+<body class="appointment-page">
+    <header class="appointment-header">
+        <div class="container nav-row">
+             <a href="index.html">
+                <img class="logo" src="images/logo1.png" alt="MediBook home">
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#medical-services">Services</a>
+                <a href="doctors.html">Our Doctors</a>
+                <a href="contact.html">Contact</a>
+                <a class="active" href="manage.html" aria-current="page">My Appointments</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="appointment-hero" aria-labelledby="manage-title">
+            <div class="container">
+                <h1 id="manage-title">My Appointments</h1>
+                <p>View, update, or cancel your appointment using your reference number.</p>
+            </div>
+        </section>
+
+        <div class="container appointment-layout">
+            <aside class="appointment-info" aria-labelledby="how-title">
+                <h2 id="how-title">How it works</h2>
+                <p class="appointment-info-note" style="border-top:0;padding-top:0">
+                    Enter the reference number you received when you booked (for
+                    example <strong>MB-00012</strong>) and the email you used.
+                </p>
+                <p class="appointment-info-note">
+                    Status meanings: <strong>Pending</strong> means waiting for the
+                    clinic, <strong>Confirmed</strong> means your slot is reserved,
+                    <strong>Completed</strong> means your visit is done, and
+                    <strong>Cancelled</strong> frees the slot.
+                </p>
+                <p class="appointment-info-note">
+                    Updates appear on this website only; we do not send SMS or email
+                    notifications. Changing the date or time sets your appointment back
+                    to Pending until the clinic confirms it.
+                </p>
+            </aside>
+
+            <section class="appointment-card" aria-labelledby="lookup-title">
+                <h2 id="lookup-title">Find My Appointment</h2>
+
+                <form id="lookup-form">
+                    <div class="appointment-fields" style="margin-top:16px">
+                        <div class="appointment-field">
+                            <label for="lookup-ref">Reference Number *</label>
+                            <input id="lookup-ref" name="reference" type="text" placeholder="MB-00001" required>
+                        </div>
+                        <div class="appointment-field">
+                            <label for="lookup-email">Email Address *</label>
+                            <input id="lookup-email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <p id="lookup-status" class="form-status" role="status"></p>
+                    <button class="booking-button appointment-submit" type="submit">Find Appointment</button>
+                </form>
+
+                <div id="result-card" class="result-card" hidden>
+                    <div class="result-head">
+                        <h3>Appointment Details</h3>
+                        <span id="result-status" class="status-badge"></span>
+                    </div>
+                    <dl id="result-details" class="result-details"></dl>
+
+                    <p id="final-note" class="appointment-info-note" hidden></p>
+
+                    <div id="change-box" hidden>
+                        <h3>Reschedule</h3>
+                        <div class="appointment-fields">
+                            <div class="appointment-field">
+                                <label for="new-date">New Date</label>
+                                <input id="new-date" type="date">
+                            </div>
+                            <div class="appointment-field">
+                                <label for="new-time">New Time</label>
+                                <select id="new-time"><option value="">Select a time</option></select>
+                            </div>
+                        </div>
+                        <div class="result-actions">
+                            <button id="reschedule-btn" class="booking-button appointment-submit" type="button">Update Appointment</button>
+                            <button id="cancel-btn" class="cancel-button" type="button">Cancel Appointment</button>
+                        </div>
+                    </div>
+                    <p id="action-status" class="form-status" role="status"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html">
+                    <img class="footer-logo" src="images/logo1.png" alt="MediBook">
+                </a>
+
+                <p>
+                    MediBook Health Clinic provides quality, patient-centered care, from routine checkups 
+                    to follow-up visits, with easy online appointment booking.
+                </p>
+            </div>
+            
+            <section class="footer-services">
+                <h2>Our Services</h2>
+
+                <ul class="footer-links">
+                    <li><a href="index.html#medical-services">General Consultation</a></li>
+                    <li><a href="index.html#medical-services">Routine Checkup</a></li>
+                    <li><a href="index.html#medical-services">Follow-Up Visit</a></li>
+                    <li><a href="index.html#medical-services">Medical Certificate Inquiries</a></li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Company</h2>
+
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#medical-services">Services</a></li>
+                    <li><a href="doctors.html">Our Doctors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="manage.html">My Appointments</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-branches">
+                <h2>Location</h2>
+
+                <ul>
+                    <li>
+                        <strong>San Bartolome</strong>
+                        <p>Novaliches</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-booking">
+            <div>
+                <strong>Ready to book your visit?</strong>
+                <p>Call us or book online.</p>
+            </div>
+
+            <div class="footer-actions">
+                <a href="tel:+639171058775">
+                    <span aria-hidden="true">☎</span> +63 917 105 8775
+                </a>
+
+                <a class="booking-button" href="appointment.html">
+                    Book an Appointment <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <small>&copy; 2026 MediBook Health Clinic. All rights reserved.</small>
+        </div>
+    </div>
+    </footer>
+
+    <a class="floating-button call-button"
+       href="tel:+639171058775"
+       aria-label="Call the clinic">☎</a>
+
+    <a class="floating-button chat-button"
+       href="contact.html"
+       aria-label="Contact the clinic">💬</a>
+    <script src="js/manage.js"></script>
+</body>
+</html>

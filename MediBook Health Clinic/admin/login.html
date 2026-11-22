@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login | MediBook Health Clinic</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-login-page">
+    <main class="login-card">
+        <img class="login-logo" src="../images/logo1.png" alt="MediBook">
+        <h1>Staff Login</h1>
+        <p class="login-help">Clinic staff only.</p>
+        <form id="login-form">
+            <div class="admin-field">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" autocomplete="username" required>
+            </div>
+            <div class="admin-field">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required>
+            </div>
+            <p id="login-status" class="form-status" role="status"></p>
+            <button class="booking-button login-submit" type="submit">Log In</button>
+        </form>
+        <p class="login-back"><a href="../index.html"><u>Back to website</u></a></p>
+    </main>
+    <script src="../js/admin-login.js"></script>
+</body>
+</html>

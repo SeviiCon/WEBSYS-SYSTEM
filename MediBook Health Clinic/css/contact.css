@@ -1,0 +1,395 @@
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ivory, #faf8f1);
+  color: var(--deep-forest, #143526);
+}
+
+.contact-page > main {
+  flex: 1;
+}
+
+/* Navbar and contact bar */
+.contact-page > header {
+  background-color: var(--deep-forest, #143526);
+  color: #fff;
+}
+
+.contact-page .contact-bar {
+  border-bottom-color: rgba(231, 239, 228, 0.25);
+}
+
+.contact-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-page > header nav a {
+  color: #fff;
+}
+
+.contact-page > header nav a:hover,
+.contact-page > header nav .active {
+  color: #fff;
+  border-bottom-color: #f4bc96;
+}
+
+/*Appointment Page */
+.contact-hero {
+  padding: 56px 0;
+  border-bottom: 4px solid var(--sage-border, #c4d5c3);
+  background-color: var(--deep-forest, #143526);
+  background-image: linear-gradient(
+    115deg,
+    var(--deep-forest, #143526),
+    var(--forest, #235a3a)
+  );
+  background-position:
+    center,
+    center 42%;
+  background-size: cover;
+}
+
+.contact-hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.contact-breadcrumb {
+  display: flex;
+  gap: 8px;
+  margin: 14px 0 0;
+  color: #fff;
+  font-size: 13px;
+}
+
+.contact-breadcrumb a:hover,
+.contact-details a:not(.booking-button):hover {
+  text-decoration: underline;
+}
+
+.contact-breadcrumb a:hover {
+  color: #f4bc96;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 90px);
+  padding: 64px 0;
+}
+
+.contact-layout h2 {
+  margin: 0 0 16px;
+  color: var(--forest, #235a3a);
+  font-size: clamp(24px, 3vw, 30px);
+}
+
+.contact-layout h2 span {
+  color: inherit;
+}
+
+.contact-intro,
+.contact-visit p {
+  margin: 0 0 24px;
+  color: var(--muted-green, #506156);
+  line-height: 1.6;
+}
+
+.contact-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+}
+
+.contact-field-wide {
+  grid-column: 1 / -1;
+}
+
+.contact-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--sage-border, #c4d5c3);
+  border-radius: 4px;
+  background-color: #fff;
+  color: var(--deep-forest, #143526);
+  font: inherit;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+  color: var(--muted-green, #506156);
+}
+
+.contact-field textarea {
+  resize: vertical;
+}
+
+.contact-field small,
+.contact-preview {
+  display: block;
+  margin: 8px 0 0;
+  color: var(--muted-green, #506156);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contact-preview {
+  background-color: #fff5e9;
+  color: #78330e;
+}
+
+.contact-form :focus-visible {
+  outline: 2px solid var(--forest, #235a3a);
+  outline-offset: 2px;
+}
+
+.contact-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 16px;
+  color: var(--muted-green, #506156);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contact-check input {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin: 2px 0 0;
+  accent-color: var(--forest, #235a3a);
+}
+
+.contact-submit {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--sage, #e7efe4);
+  color: var(--deep-forest, #143526);
+  font: inherit;
+  font-weight: bold;
+}
+
+.contact-submit:disabled {
+  cursor: not-allowed;
+}
+
+.contact-page .booking-button {
+  background-color: var(--orange, #b74712);
+  color: #fff;
+  box-shadow: 0 5px 16px rgba(20, 53, 38, 0.22);
+}
+
+.contact-page .booking-button:hover {
+  background-color: var(--orange-hover, #92370c);
+  color: #fff;
+}
+
+.contact-submit:not(:disabled):hover {
+  background-color: var(--sage-border, #c4d5c3);
+  color: var(--deep-forest, #143526);
+}
+
+.contact-details ul {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contact-detail-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: var(--sage, #e7efe4);
+  color: var(--deep-forest, #143526);
+}
+
+.contact-details strong,
+.contact-details li a {
+  display: block;
+}
+
+.contact-details li a {
+  margin-top: 4px;
+  color: var(--forest, #235a3a);
+}
+
+.contact-details li a:hover {
+  color: var(--deep-forest, #143526);
+}
+
+.contact-visit {
+  margin-top: 36px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 68px 20px 36px;
+  background: linear-gradient(var(--forest), var(--deep-forest));
+  color: var(--light-green-text);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 1023px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 1.35fr;
+  gap: 32px;
+}
+
+.footer-logo {
+  display: block;
+  width: 46px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-brand p {
+  max-width: 215px;
+  margin: 14px 0 0;
+}
+
+.site-footer h2 {
+  margin: 0 0 18px;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-services .footer-links {
+  columns: 1;
+  column-gap: 24px;
+}
+
+.footer-services .footer-links li {
+  break-inside: avoid;
+}
+
+.footer-branches li {
+  margin-bottom: 14px;
+}
+
+.footer-branches strong,
+.footer-booking strong {
+  color: var(--ivory);
+}
+
+.footer-branches p,
+.footer-booking p {
+  margin: 2px 0 0;
+  font-size: 11px;
+}
+
+.site-footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-booking,
+.footer-bottom,
+.footer-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-booking,
+.footer-bottom {
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-booking {
+  margin-top: 40px;
+  padding: 28px 0;
+}
+
+.footer-actions .booking-button {
+  padding: 8px 22px;
+}
+
+.footer-bottom {
+  padding-top: 22px;
+  font-size: 11px;
+}
+
+.footer-bottom small {
+  font-size: inherit;
+}
+
+/* Floating call and chat buttons */
+.floating-button {
+  position: fixed;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 23px;
+}
+
+.call-button {
+  left: 24px;
+}
+
+.chat-button {
+  right: 24px;
+}
+
+/* Form status message (success / error) */
+.form-status {
+  display: none;
+  margin: 16px 0 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.form-status.success { display: block; background: #e7efe4; color: #143526; border: 1px solid #c4d5c3; }
+.form-status.error   { display: block; background: #fff5e9; color: #78330e; border: 1px solid #edcfb7; }
